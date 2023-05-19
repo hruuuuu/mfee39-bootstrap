@@ -92,58 +92,65 @@
             <span class="text-break">
               ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
             </span>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>編號</th>
-                  <th>元件</th>
-                  <th>英文名稱</th>
-                  <th>描述</th>
-                  <th>連結</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>1</th>
-                  <td>網格</td>
-                  <td>Grid</td>
-                  <td>Bootstrap的佈局系統，用於創建靈活的網頁佈局</td>
-                  <td>https://getbootstrap.com/docs/5.3/layout/grid/</td>
-                </tr>
-                <tr>
-                  <th>2</th>
-                  <td>按鈕</td>
-                  <td>Button</td>
-                  <td>使用不同樣式和大小的按鈕增加互動性和功能</td>
-                  <td>https://getbootstrap.com/docs/5.3/components/buttons/</td>
-                </tr>
-                <tr>
-                  <th>3</th>
-                  <td>模式對話框</td>
-                  <td>Modal</td>
-                  <td>創建視窗對話框，用於顯示詳細內容或進行操作</td>
-                  <td>https://getbootstrap.com/docs/5.3/components/modal/</td>
-                </tr>
-                <tr>
-                  <th>4</th>
-                  <td>圖片</td>
-                  <td>Image</td>
-                  <td>輕鬆添加圖片到網頁並進行適當的調整和排版</td>
-                  <td>https://getbootstrap.com/docs/5.3/content/images/</td>
-                </tr>
-                <tr>
-                  <th>5</th>
-                  <td>表格</td>
-                  <td>Table</td>
-                  <td>建立具有排序和過濾功能的美觀表格，展示數據內容</td>
-                  <td>https://getbootstrap.com/docs/5.3/content/tables/</td>
-                </tr>
-              </tbody>
-              <tfoot></tfoot>
-            </table>
+            <span class="text-break">
+              https://getbootstrap.com/docs/5.3/utilities/text/getbootstrap.com/docs/5.3/utilities/text/getbootstrap.com/docs/5.3/utilities/text/getbootstrap.com/docs/5.3/utilities/text/getbootstrap.com/docs/5.3/utilities/text/getbootstrap.com/docs/5.3/utilities/text/
+            </span>
+            <!-- 表格 -->
+            <div class="table-responsive">
+              <table class="table table-striped-columns table-hover caption-top text-nowrap">
+                <caption>這個表格提供了一個簡單的概覽，介紹了一些常見的 Bootstrap 元件及其功能：</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">編號</th>
+                    <th scope="col">元件</th>
+                    <th scope="col">英文名稱</th>
+                    <th scope="col">描述</th>
+                    <th scope="col">連結</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="table-primary">網格</td>
+                    <td>Grid</td>
+                    <td>Bootstrap的佈局系統，用於創建靈活的網頁佈局</td>
+                    <td>https://getbootstrap.com/docs/5.3/layout/grid/</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>按鈕</td>
+                    <td>Button</td>
+                    <td>使用不同樣式和大小的按鈕增加互動性和功能</td>
+                    <td>https://getbootstrap.com/docs/5.3/components/buttons/</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>模式對話框</td>
+                    <td>Modal</td>
+                    <td>創建視窗對話框，用於顯示詳細內容或進行操作</td>
+                    <td>https://getbootstrap.com/docs/5.3/components/modal/</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <th scope="row">4</th>
+                    <td colspan="2">圖片 Image</td>
+                    <td>輕鬆添加圖片到網頁並進行適當的調整和排版</td>
+                    <td>https://getbootstrap.com/docs/5.3/content/images/</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>表格</td>
+                    <td>Table</td>
+                    <td>建立具有排序和過濾功能的美觀表格，展示數據內容</td>
+                    <td>https://getbootstrap.com/docs/5.3/content/tables/</td>
+                  </tr>
+                </tbody>
+                <tfoot></tfoot>
+              </table>
+            </div>
           </div>
+          <!-- 更多文章 -->
           <h2 class="fs-3 text-primary mb-4">更多文章</h2>
-          <div class="row row-cols-1 row-cols-lg-2 g-3">
+          <div class="row row-cols-1 row-cols-lg-2 g-3 mb-4">
             <div class="col order-2">
               <div class="p-3 bg-body rounded-2 h-100">
                 <h4 class="text-truncate">華麗又實用！打造漂亮按鈕的 Bootstrap 教學</h4>
@@ -170,6 +177,19 @@
               </div>
             </div>
           </div>
+          <!-- 留言 -->
+          <h2 class="fs-3 text-primary mb-4">留言</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="name">
+              <div class="form-text">姓名或暱稱皆可。</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+          </form>
         </div>
       </div>
       <div class="col-12 col-lg-5 col-xl-4">
