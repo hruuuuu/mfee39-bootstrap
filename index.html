@@ -429,6 +429,22 @@
             </div>
             <div id="alert"></div>
           </form>
+
+          <!-- 吐司 -->
+          <button type="button" class="btn btn-success mt-3" id="toastBtn">開啟toast</button>
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">toast想跟你打招呼</strong>
+                <small>0分鐘前</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                嗨～～～～～～
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- 右側邊欄 -->
@@ -557,6 +573,17 @@
     if (alertTrigger) {
       alertTrigger.addEventListener('click', () => {
         appendAlert('哈囉～～～～～～～～～～', 'info')
+      })
+    }
+  </script>
+  <script>
+    const toastTrigger = document.getElementById('toastBtn')
+    const toast = document.getElementById('toast')
+
+    if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast)
+      toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
       })
     }
   </script>
