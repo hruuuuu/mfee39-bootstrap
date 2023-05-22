@@ -447,6 +447,11 @@
           <!-- popover -->
           <button type="button" class="btn btn-danger mt-3" data-bs-toggle="popover" data-bs-title="popover想跟你打招呼"
             data-bs-content="嗨～～～～～～">點我點我</button>
+          <!-- tooltip -->
+          <button type="button" class="btn btn-secondary mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="嗨～～～～～～">
+            不用點我，hover就好
+          </button>
         </div>
       </div>
       <!-- 右側邊欄 -->
@@ -592,6 +597,10 @@
   <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 </body>
 
