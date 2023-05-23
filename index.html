@@ -102,9 +102,39 @@
             </ul>
           </div>
           <!-- 內文 -->
-          <img class="img-fluid mb-2"
-            src="https://cdn.shopify.com/s/files/1/0548/8305/7891/files/Untitled_Artwork_5d8b2c3f-7f80-4ca6-bc1a-81e277e6512f.png?v=1678158356"
-            alt="">
+          <div id="carousel" class="carousel slide mb-2" data-bs-ride="carousel" data-bs-theme="dark">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid"
+                  src="https://cdn.shopify.com/s/files/1/0548/8305/7891/files/Untitled_Artwork_5d8b2c3f-7f80-4ca6-bc1a-81e277e6512f.png?v=1678158356"
+                  alt="">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://c4.kemono.party/data/91/ab/91ab17136a212848b29922a650811cbe5209d0b78a349489b7950638e85b4c37.png?f=Kitty1.png"
+                  class="img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://c2.kemono.party/data/2e/7e/2e7ed1cd4973451b2c6c7bda2bf9ab58ce6680e8184cbfa7c82bed16a574792d.png?f=toastkitty1.png"
+                  class="img-fluid" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <h1 class="text-bg-primary" id="article">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
           <div style="white-space: pre-line;">
             嘿，大家好！今天我們要一起探索 <mark> Bootstrap 的 <abbr title="網格">Grid</abbr>
