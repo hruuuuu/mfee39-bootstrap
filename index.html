@@ -45,7 +45,7 @@
     </symbol>
   </svg>
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand text-uppercase fw-bold" href="#">Allie's blog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -55,18 +55,18 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Top</a>
+            <a class="nav-link active" aria-current="page" href="#top">Top</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">文章</a>
+            <a class="nav-link" href="#article">文章</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               其他
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">元件</a></li>
-              <li><a class="dropdown-item" href="#">留言</a></li>
+              <li><a class="dropdown-item" href="#tab">元件</a></li>
+              <li><a class="dropdown-item" href="#reply">留言</a></li>
             </ul>
           </li>
         </ul>
@@ -77,13 +77,13 @@
       </div>
     </div>
   </nav>
-  <!-- 文章 -->
-  <div class="container py-4">
+  <!-- 內容 -->
+  <div class="container py-4" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
     <div class="row gx-5 gy-3">
-      <!-- 內容 -->
+      <!-- 文章 -->
       <div class="col-12 col-lg-7 col-xl-8">
         <div class="bg-light p-4 rounded-2 shadow-sm">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" id="top">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">首頁</a></li>
               <li class="breadcrumb-item"><a href="#">教學</a></li>
@@ -105,7 +105,7 @@
           <img class="img-fluid mb-2"
             src="https://cdn.shopify.com/s/files/1/0548/8305/7891/files/Untitled_Artwork_5d8b2c3f-7f80-4ca6-bc1a-81e277e6512f.png?v=1678158356"
             alt="">
-          <h1 class="text-bg-primary">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
+          <h1 class="text-bg-primary" id="article">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
           <div style="white-space: pre-line;">
             嘿，大家好！今天我們要一起探索 <mark> Bootstrap 的 <abbr title="網格">Grid</abbr>
               系統</mark>，這是設計師和開發者的秘密武器，能夠輕鬆打造出令人驚艷的網頁佈局。快跟著我們一起踏上這趟有趣的旅程吧！
@@ -406,7 +406,7 @@
           </div>
 
           <!-- 留言 -->
-          <h2 class="fs-3 text-primary my-4">留言</h2>
+          <h2 class="fs-3 text-primary my-4" id="reply">留言</h2>
           <form>
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
